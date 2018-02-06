@@ -1,0 +1,19 @@
+apps:
+  - script : './bashscript.sh'
+    name : 'service1-bash'
+  - script : './echo.php'
+    name : 'service2-php'
+    instances : 3
+    exec_mode : 'fork'
+  - script : './echo.php'
+    name : 'service3-php'
+    instances : 2
+    exec_mode : 'fork'
+  - script : './echo.rb'
+    name : 'service4-ruby'
+  - script : './echo.py'
+    name : 'service5-python'
+  - script : './echo.js'
+    name : 'service6-node'
+    instances : 2
+    exec_mode : 'cluster'

@@ -13,6 +13,7 @@ pm2 show 2
 pm2 delete service4-ruby
 pm2 monit
 pm2 monitor service2-php
+pm2 scale service2-php
 pm2 kill
 ```
 
@@ -24,3 +25,6 @@ pm2 install pm2-webshell
 pm2 install pm2-amqp-logstash
 pm2 install pm2-rabbitmq
 ```
+
+## alternatives
+http://supervisord.org/index.html
